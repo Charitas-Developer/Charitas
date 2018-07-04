@@ -43,8 +43,8 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Starting Difficulty: results w
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 2);
 
-static const int64_t nTargetTimespan = 20 * 60;  // Charitas - every 20mins
-unsigned int nTargetSpacing = 1 * 79; // Charitas - 79 secs
+static const int64_t nTargetTimespan = 10 * 60;  // Charitas - every 10mins
+unsigned int nTargetSpacing = 1 * 90; // Charitas - 90 secs
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 static const int64_t nDiffChangeTarget = 1;
