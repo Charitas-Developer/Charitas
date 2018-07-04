@@ -916,7 +916,7 @@ void CMasternodeMan::CheckAndRemove()
         }
     }
 
-    // TODO: NTRN - do more checks here
+    // TODO: CRTA - do more checks here
 }
 
 void CMasternodeMan::Clear()

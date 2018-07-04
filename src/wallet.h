@@ -46,7 +46,7 @@ enum AvailableCoinsType
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NONDENOMINATED = 3,
-    ONLY_NONDENOMINATED_NOTMN = 4 // ONLY_NONDENOMINATED and not 25000 NTRN at the same time
+    ONLY_NONDENOMINATED_NOTMN = 4 // ONLY_NONDENOMINATED and not 25000 CRTA at the same time
 };
 
 /** IsMine() return codes */

@@ -1568,7 +1568,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
 
             // can only safely check this once mn list synced
-            /// TODO: NTRN - adjust mn list synced logic later
+            /// TODO: CRTA - adjust mn list synced logic later
             bool fMasternodeSynced = fTestNet ? mnodeman.CountEnabled()>=1 : mnodeman.CountEnabled()>=200;
             if (fMasternodeSynced) {
                 if (!fValidPayment && fMasternodeSynced && sporkManager.IsSporkActive(SPORK_1_MASTERNODE_PAYMENTS_ENFORCEMENT) && sporkManager.IsSporkActive(SPORK_2_MASTERNODE_WINNER_ENFORCEMENT)) {
@@ -2990,7 +2990,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         return true;
     }
 
-    /* TODO: NTRN - look into bloom */
+    /* TODO: CRTA - look into bloom */
 
     if (strCommand == NetMsgType::VERSION)
     {

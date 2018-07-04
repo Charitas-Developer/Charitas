@@ -7,7 +7,7 @@ Charitas is an open source wallet aimed at increasing a holders BTC Value over t
 Specs:
         
 
-	Ticker: NTRN
+	Ticker: CRTA
 	
 	No Premine, No IPO/ICO
 

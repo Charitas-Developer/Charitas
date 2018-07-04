@@ -176,7 +176,7 @@ Value setban(const Array& params, bool fHelp)
                             + HelpExampleRpc("setban", "\"192.168.0.6\", \"add\" 86400")
                             );
 
-    // NTRN TODO - need to finish implementing this function
+    // CRTA TODO - need to finish implementing this function
     throw runtime_error(
             "Not implemented yet\n");
 
@@ -250,7 +250,7 @@ Value clearbanned(const Array& params, bool fHelp)
                             );
 
     CNode::ClearBanned();
-    // NTRN TODO - store banlist to disk
+    // CRTA TODO - store banlist to disk
 
     return Value::null;
 }

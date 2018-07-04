@@ -553,7 +553,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    // TODO: NTRN - do we want to implement this?
+    // TODO: CRTA - do we want to implement this?
     // /// 5. Now that settings and translations are available, ask user for data directory
     // // User language is set up: pick a data directory
     // Intro::pickDataDirectory();

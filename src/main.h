@@ -47,10 +47,10 @@ static const int64_t DARKSEND_COLLATERAL = (25000*COIN);
 static const int64_t DARKSEND_FEE = (0.0025000*COIN);
 static const int64_t DARKSEND_POOL_MAX = (250000.99*COIN);
 
-/** Maximum length of reject messages. */ // TODO: NTRN - move to validation.h eventually
+/** Maximum length of reject messages. */ // TODO: CRTA - move to validation.h eventually
 static const unsigned int MAX_REJECT_MESSAGE_LENGTH = 111;
 
-/** "reject" message codes */ // TODO: NTRN - move to consensus/validation.h eventually
+/** "reject" message codes */ // TODO: CRTA - move to consensus/validation.h eventually
 static const unsigned char REJECT_MALFORMED = 0x01;
 static const unsigned char REJECT_OBSOLETE = 0x11;
 static const unsigned char REJECT_DUPLICATE = 0x12;

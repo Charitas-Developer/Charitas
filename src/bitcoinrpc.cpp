@@ -283,7 +283,7 @@ static const CRPCCommand vRPCCommands[] =
     { "verifymessage",          &verifymessage,          true,       false },
 
     /* Charitas features */
-    // TODO: NTRN - Add masternodelist
+    // TODO: CRTA - Add masternodelist
     { "masternode",             &masternode,             true,       true },
     { "spork",                  &spork,                  true,       false },
 
@@ -322,7 +322,7 @@ static const CRPCCommand vRPCCommands[] =
     { "walletpassphrasechange", &walletpassphrasechange, false,      false },
     { "walletpassphrase",       &walletpassphrase,       true,       false },
 
-    // TODO: NTRN - still need to categorize
+    // TODO: CRTA - still need to categorize
     { "addredeemscript",        &addredeemscript,        false,      false },
     { "checkwallet",            &checkwallet,            false,      true },
     { "getblockbynumber",       &getblockbynumber,       false,      false },

@@ -449,14 +449,14 @@ void CNode::PushVersion()
 banmap_t CNode::setBanned;
 CCriticalSection CNode::cs_setBanned;
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 void CNode::ClearBanned()
 {
     LOCK(cs_setBanned);
     setBanned.clear();
 }
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 bool CNode::IsBanned(CNetAddr ip)
 {
     bool fResult = false;
@@ -473,9 +473,9 @@ bool CNode::IsBanned(CNetAddr ip)
     return fResult;
 }
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 bool CNode::Unban(const CNetAddr &addr) {
-    // NTRN TODO - not implemented yet
+    // CRTA TODO - not implemented yet
     // CSubNet subNet(addr);
     // return Unban(subNet);
 
@@ -487,7 +487,7 @@ bool CNode::Unban(const CNetAddr &addr) {
     return true;
 }
 
-// // NTRN TODO - create CConnman class and move this method there eventually
+// // CRTA TODO - create CConnman class and move this method there eventually
 // bool CNode::Unban(const CSubNet &subNet)
 // {
 //     {
@@ -498,14 +498,14 @@ bool CNode::Unban(const CNetAddr &addr) {
 //     return true;
 // }
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 void CNode::GetBanned(banmap_t &banMap)
 {
     LOCK(cs_setBanned);
     banMap = setBanned; //create a thread safe copy
 }
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 void CNode::SetBanned(const banmap_t &banMap)
 {
     LOCK(cs_setBanned);
@@ -1177,7 +1177,7 @@ struct CDNSSeedData {
 std::vector<CDNSSeedData> vSeeds;
 
 const std::vector<CDNSSeedData>& DNSSeeds() {
-    vSeeds.push_back(CDNSSeedData("cryptotools", "ntrn.seed.cryptotools.pw"));
+    vSeeds.push_back(CDNSSeedData("cryptotools", "crta.seed.cryptotools.pw"));
     return vSeeds;
 }
 
@@ -1553,7 +1553,7 @@ void ThreadOpenAddedConnections2(void* parg)
     }
 }
 
-// NTRN TODO - create CConnman class and move this method there eventually
+// CRTA TODO - create CConnman class and move this method there eventually
 // if successful, this moves the passed grant to the constructed node
 bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOutbound, const char *strDest, bool fOneShot)
 {
@@ -1869,7 +1869,7 @@ void StartNode(void* parg)
             LogPrintf("Invalid or missing peers.dat; recreating\n");
     }
 
-    // TODO: NTRN - possibly implement banlist
+    // TODO: CRTA - possibly implement banlist
 
     LogPrintf("Loaded %i addresses from peers.dat  %dms\n",
            addrman.size(), GetTimeMillis() - nStart);

@@ -1339,7 +1339,7 @@ void CWallet::AvailableCoinsMN(vector<COutput>& vCoins, bool fOnlyConfirmed, con
                 continue;
 
             int nDepth = pcoin->GetDepthInMainChain();
-            if (nDepth <= 0) // NTRNNOTE: coincontrol fix / ignore 0 confirm
+            if (nDepth <= 0) // CRTANOTE: coincontrol fix / ignore 0 confirm
                 continue;
 
            /* for (unsigned int i = 0; i < pcoin->vout.size(); i++)
@@ -1597,7 +1597,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, coinControl);
 
-    //if we're doing only denominated, we need to round up to the nearest .1 NTRN
+    //if we're doing only denominated, we need to round up to the nearest .1 CRTA
     if(coin_type == ONLY_DENOMINATED){
         // Make outputs by looping through denominations, from large to small
         BOOST_FOREACH(int64_t v, darkSendDenominations)
@@ -1606,7 +1606,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, unsigned int nSpendTime, set<pai
             BOOST_FOREACH(const COutput& out, vCoins)
             {
                 if(out.tx->vout[out.i].nValue == v                                            //make sure it's the denom we're looking for
-                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1 NTRN over
+                    && nValueRet + out.tx->vout[out.i].nValue < nTargetValue + (0.1*COIN)+100 //round the amount up to .1 CRTA over
                     && added <= 100){                                                          //don't add more than 100 of one denom type
                         CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
                         int rounds = GetInputDarksendRounds(vin);
@@ -1735,10 +1735,10 @@ bool CWallet::SelectCoinsByDenominations(int nDenom, int64_t nValueMin, int64_t 
 
             // Function returns as follows:
             //
-            // bit 0 - 100 NTRN+1 ( bit on if present )
-            // bit 1 - 10 NTRN+1
-            // bit 2 - 1 NTRN+1
-            // bit 3 - .1 NTRN+1
+            // bit 0 - 100 CRTA+1 ( bit on if present )
+            // bit 1 - 10 CRTA+1
+            // bit 2 - 1 CRTA+1
+            // bit 3 - .1 CRTA+1
 
             CTxIn vin = CTxIn(out.tx->GetHash(),out.i);
 

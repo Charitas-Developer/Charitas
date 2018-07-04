@@ -268,9 +268,9 @@ if __name__ == '__main__':
     f.close()
 
     if 'netmagic' not in settings:
-        settings['netmagic'] = 'aff4c1a2' # ntrn-testnet-magic
+        settings['netmagic'] = 'aff4c1a2' # crta-testnet-magic
     if 'genesis' not in settings:
-        settings['genesis'] = '3c81f5a39588ff6112bf55343ef61b998098a3eca0cabfb6b3dbd908c2c3345a' #ntrn-testnet-genesis
+        settings['genesis'] = '3c81f5a39588ff6112bf55343ef61b998098a3eca0cabfb6b3dbd908c2c3345a' #crta-testnet-genesis
     if 'input' not in settings:
         settings['input'] = 'input'
     if 'hashlist' not in settings:

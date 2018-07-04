@@ -417,7 +417,7 @@ void BitcoinGUI::createMenuBar()
 
     QMenu *tools = appMenuBar->addMenu(tr("&Tools"));
     tools->addAction(openConfEditorAction);
-    // TODO: NTRN - hide this option for now
+    // TODO: CRTA - hide this option for now
     // tools->addAction(openMNConfEditorAction);
     tools->addSeparator();
     tools->addAction(showBackupsAction);

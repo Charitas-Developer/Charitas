@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2012 The Darkcoin developers
-// Copyright (c) 2015-2016 The NTRN developers
+// Copyright (c) 2015-2016 The CRTA developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 

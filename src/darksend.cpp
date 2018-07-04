@@ -768,9 +768,9 @@ void CDarkSendPool::ChargeRandomFees(){
 
                 Being that DarkSend has "no fees" we need to have some kind of cost associated
                 with using it to stop abuse. Otherwise it could serve as an attack vector and
-                allow endless transaction that would bloat NTRN and make it unusable. To
+                allow endless transaction that would bloat CRTA and make it unusable. To
                 stop these kinds of attacks 1 in 50 successful transactions are charged. This
-                adds up to a cost of 0.002 NTRN per transaction on average.
+                adds up to a cost of 0.002 CRTA per transaction on average.
             */
             if(r <= 20)
             {
@@ -1466,8 +1466,8 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         //randomize the amounts we mix
         if(sessionTotalValue > nBalanceNeedsAnonymized) sessionTotalValue = nBalanceNeedsAnonymized;
 
-        double fNtrnSubmitted = (sessionTotalValue / CENT);
-        LogPrintf("Submitting Darksend for %f NTRN CENT - sessionTotalValue %d\n", fNtrnSubmitted, sessionTotalValue);
+        double fCrtaSubmitted = (sessionTotalValue / CENT);
+        LogPrintf("Submitting Darksend for %f CRTA CENT - sessionTotalValue %d\n", fCrtaSubmitted, sessionTotalValue);
 
         if(pwalletMain->GetDenominatedBalance(true, true) > 0){ //get denominated unconfirmed inputs
             LogPrintf("DoAutomaticDenominating -- Found unconfirmed denominated outputs, will wait till they confirm to continue.\n");
@@ -1853,10 +1853,10 @@ bool CDarkSendPool::IsCompatibleWithSession(int64_t nDenom, CTransaction txColla
 void CDarkSendPool::GetDenominationsToString(int nDenom, std::string& strDenom){
     // Function returns as follows:
     //
-    // bit 0 - 100 NTRN+1 ( bit on if present )
-    // bit 1 - 10 NTRN+1
-    // bit 2 - 1 NTRN+1
-    // bit 3 - .1 NTRN+1
+    // bit 0 - 100 CRTA+1 ( bit on if present )
+    // bit 1 - 10 CRTA+1
+    // bit 2 - 1 CRTA+1
+    // bit 3 - .1 CRTA+1
     // bit 3 - non-denom
 
 
@@ -1914,10 +1914,10 @@ int CDarkSendPool::GetDenominations(const std::vector<CTxOut>& vout){
 
     // Function returns as follows:
     //
-    // bit 0 - 100 NTRN+1 ( bit on if present )
-    // bit 1 - 10 NTRN+1
-    // bit 2 - 1 NTRN+1
-    // bit 3 - .1 NTRN+1
+    // bit 0 - 100 CRTA+1 ( bit on if present )
+    // bit 1 - 10 CRTA+1
+    // bit 2 - 1 CRTA+1
+    // bit 3 - .1 CRTA+1
 
     return denom;
 }
@@ -2175,7 +2175,7 @@ void ThreadCheckDarkSendPool(void* parg)
 
                 LOCK(cs_vNodes);
                 BOOST_FOREACH(CNode* pnode, vNodes){
-                    // TODO: NTRN - should probably cycle through a few nodes at a time until all used, then reset the list...
+                    // TODO: CRTA - should probably cycle through a few nodes at a time until all used, then reset the list...
 
                     if (pnode->HasFulfilledRequest("getspork")) continue;
                     pnode->FulfilledRequest("getspork");
@@ -2199,11 +2199,11 @@ void ThreadCheckDarkSendPool(void* parg)
                 activeMasternode.ManageStatus();
             }
 
-            // TODO: NTRN - disabled for now
+            // TODO: CRTA - disabled for now
             // darkSendPool.CheckTimeout();
             // darkSendPool.CheckForCompleteQueue();
 
-            // TODO: NTRN - disabled for now
+            // TODO: CRTA - disabled for now
             // if(nTick % (60*5) == 0){
             //     int nMnCountEnabled = mnodeman.CountEnabled(ActiveProtocol());
 
