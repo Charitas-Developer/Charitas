@@ -49,8 +49,8 @@ static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 static const int64_t nDiffChangeTarget = 1;
 
-unsigned int nStakeMinAge = 5 * 60 * 60; // Charitas - 5 hours
-unsigned int nStakeMaxAge = 5 * 60 * 60; // Charitas - 5 hours
+unsigned int nStakeMinAge = 24 * 60 * 60; // Charitas - 24 hours
+unsigned int nStakeMaxAge = 24 * 60 * 60; // Charitas - 24 hours
 unsigned int nModifierInterval = 10 * 60; // Charitas - time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 80;
