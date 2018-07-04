@@ -9,9 +9,9 @@
 #include <string>
 
 // Name of client reported in the 'version' message. Report the same name
-// for both neutrond and neutron-qt, to make it harder for attackers to
+// for both charitasd and charitas-qt, to make it harder for attackers to
 // target servers or GUI users specifically.
-const std::string CLIENT_NAME("Neutron Core");
+const std::string CLIENT_NAME("Charitas Core");
 
 /**
  * Client version number

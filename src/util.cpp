@@ -77,7 +77,7 @@ string strMasterNodePrivKey = "";
 string strMasterNodeAddr = "";
 bool fLiteMode = false;
 int nDarksendRounds = 2;
-int nAnonymizeNeutronAmount = 500;
+int nAnonymizeCharitasAmount = 500;
 int nLiquidityProvider = 0;
 /** Spork enforcement enabled time */
 int64_t enforceMasternodePaymentsTime = 4085657524;
@@ -461,12 +461,12 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows: C:\Users\Username\AppData\Roaming\Neutron
-    // Mac: ~/Library/Application Support/Neutron
-    // Unix: ~/.neutron
+    // Windows: C:\Users\Username\AppData\Roaming\Charitas
+    // Mac: ~/Library/Application Support/Charitas
+    // Unix: ~/.charitas
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Neutron";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Charitas";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -478,10 +478,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Neutron";
+    return pathRet / "Charitas";
 #else
     // Unix
-    return pathRet / ".neutron";
+    return pathRet / ".charitas";
 #endif
 #endif
 }
@@ -530,7 +530,7 @@ boost::filesystem::path GetMasternodeConfigFile()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "neutron.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "charitas.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -561,7 +561,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "neutrond.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "charitasd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

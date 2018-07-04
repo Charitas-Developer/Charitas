@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "Neutron"
-#define QAPP_ORG_DOMAIN "neutroncoin.com"
-#define QAPP_APP_NAME_DEFAULT "Neutron-Qt"
-#define QAPP_APP_NAME_TESTNET "Neutron-Qt-testnet"
+#define QAPP_ORG_NAME "Charitas"
+#define QAPP_ORG_DOMAIN "charitascoin.com"
+#define QAPP_APP_NAME_DEFAULT "Charitas-Qt"
+#define QAPP_APP_NAME_TESTNET "Charitas-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

@@ -1,9 +1,9 @@
-Building Neutron
+Building Charitas
 
-See doc/readme-qt.rst for instructions on building Neutron QT,
+See doc/readme-qt.rst for instructions on building Charitas QT,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Neutron.
+implementation of Charitas.
 
 See doc/build-*.txt for instructions on building Testcoind,
 the intended-for-services, no-graphical-interface, reference
-implementation of Neutron.
+implementation of Charitas.

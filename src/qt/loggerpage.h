@@ -26,15 +26,15 @@
 #define LOGGER_UPDATE_SECONDS 1
 
 #if defined(Q_OS_WIN)
-    // Windows: GetDefaultDataDir()\Neutron
-    #define DEBUG_FILEPATH "\\.Neutron\\debug.log"
+    // Windows: GetDefaultDataDir()\Charitas
+    #define DEBUG_FILEPATH "\\.Charitas\\debug.log"
 #else
 #if defined(Q_OS_MAC)
-    // Mac: GetDefaultDataDir()/Neutron
-    #define DEBUG_FILEPATH "Neutron/debug.log"
+    // Mac: GetDefaultDataDir()/Charitas
+    #define DEBUG_FILEPATH "Charitas/debug.log"
 #else
-    // Unix: GetDefaultDataDir()/.neutron
-    #define DEBUG_FILEPATH ".neutron/debug.log"
+    // Unix: GetDefaultDataDir()/.charitas
+    #define DEBUG_FILEPATH ".charitas/debug.log"
 #endif
 #endif
 

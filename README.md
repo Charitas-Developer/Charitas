@@ -1,7 +1,7 @@
-<a href="http://i.imgur.com/YUhDNh9.png"><img src="http://i.imgur.com/YUhDNh9.png" title="Neutron" /></a>
+<a href="http://i.imgur.com/YUhDNh9.png"><img src="http://i.imgur.com/YUhDNh9.png" title="Charitas" /></a>
 
 
-Neutron is an open source wallet aimed at increasing a holders BTC Value over time with staking features. Now under new Management with active members. The Neutron Network is solid and will be maintained for the forseeable future. Support the network by running a Nucleus Node and earn coin for your efforts! Neutron is obtainable on well known exchanges and can be purchased at market prices. Neutron is easy to Buy, Stake, Trade, and Sell. 
+Charitas is an open source wallet aimed at increasing a holders BTC Value over time with staking features. Now under new Management with active members. The Charitas Network is solid and will be maintained for the forseeable future. Support the network by running a Nucleus Node and earn coin for your efforts! Charitas is obtainable on well known exchanges and can be purchased at market prices. Charitas is easy to Buy, Stake, Trade, and Sell. 
 
 
 Specs:
@@ -65,4 +65,4 @@ Now, for the regular PoS rewards schedule:
 	Block 13500 and Up = Regular 7% Annual PoS
 
 
-For more information about Neutron, please contact bitlabzinc@gmail.com
+For more information about Charitas, please contact bitlabzinc@gmail.com

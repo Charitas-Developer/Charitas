@@ -33,7 +33,7 @@ public:
         Language,          // QString
         CoinControlFeatures, // bool
         DarksendRounds,    // int
-        anonymizeNeutronAmount, //int
+        anonymizeCharitasAmount, //int
         OptionIDRowCount,
     };
 
@@ -73,7 +73,7 @@ signals:
     void reserveBalanceChanged(qint64);
     void coinControlFeaturesChanged(bool);
     void darksendRoundsChanged(int);
-    void anonymizeNeutronAmountChanged(int);
+    void anonymizeCharitasAmountChanged(int);
 };
 
 #endif // OPTIONSMODEL_H

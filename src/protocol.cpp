@@ -36,7 +36,7 @@ const char *FILTERADD="filteradd";
 const char *FILTERCLEAR="filterclear";
 const char *REJECT="reject";
 const char *SENDHEADERS="sendheaders";
-// Neutron message types
+// Charitas message types
 const char *SPORK="spork";
 const char *GETSPORKS="getsporks";
 const char *MASTERNODEPAYMENTVOTE="mnw";
@@ -105,7 +105,7 @@ const static std::string allNetMessageTypes[] = {
     NetMsgType::FILTERCLEAR,
     NetMsgType::REJECT,
     NetMsgType::SENDHEADERS,
-    // Neutron message types
+    // Charitas message types
     NetMsgType::SPORK,
     NetMsgType::GETSPORKS,
     NetMsgType::MASTERNODEPAYMENTVOTE,

@@ -121,7 +121,7 @@ boost::filesystem::path GetMasternodeConfigFile();
 extern bool fMasterNode;
 extern bool fLiteMode;
 extern int nDarksendRounds;
-extern int nAnonymizeNeutronAmount;
+extern int nAnonymizeCharitasAmount;
 extern int nLiquidityProvider;
 extern bool fEnableDarksend;
 extern int64_t enforceMasternodePaymentsTime;
@@ -349,7 +349,7 @@ inline uint32_t ByteReverse(uint32_t value)
 template <typename Callable>
 void TraceThread(const char* name, Callable func)
 {
-    std::string s = strprintf("neutron-%s", name);
+    std::string s = strprintf("charitas-%s", name);
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);

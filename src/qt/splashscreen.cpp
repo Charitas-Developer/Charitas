@@ -30,7 +30,7 @@ SplashScreen::SplashScreen(const QPixmap &pixmap, Qt::WindowFlags f) :
     // float fontFactor            = 1.0;
 
     // define text to place
-    // QString titleText       = tr("Neutron Core");
+    // QString titleText       = tr("Charitas Core");
     // QString versionText     = QString(tr("Version %1")).arg(QString::fromStdString(FormatFullVersion()));
     // QString copyrightTextBtc   = QChar(0xA9)+QString(" 2009-2015 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
 

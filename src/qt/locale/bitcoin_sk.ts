@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Neutron</source>
+        <source>About Charitas</source>
         <translation>O BTestcoine</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Neutron&lt;/b&gt; version</source>
-        <translation>verzia &lt;b&gt;Neutronu&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Charitas&lt;/b&gt; version</source>
+        <translation>verzia &lt;b&gt;Charitasu&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Neutron developers</source>
+Copyright © 2014 The Charitas developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The Neutron developers</translation>
+Copyright © 2014 The Charitas developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your Neutron addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše Neutron adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your Charitas addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše Charitas adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Neutron address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Neutron adresu</translation>
+        <source>Sign a message to prove you own a Charitas address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Charitas adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified Neutron address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Neutron adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified Charitas address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Charitas adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-58"/>
-        <source>Neutron will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>Neutron sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
+        <source>Charitas will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Charitas sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Neutron</source>
-        <translation>Zobraziť informácie o Neutron</translation>
+        <source>Show information about Charitas</source>
+        <translation>Zobraziť informácie o Charitas</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a Neutron address</source>
-        <translation>Poslať mince na Neutron adresu</translation>
+        <source>Send coins to a Charitas address</source>
+        <translation>Poslať mince na Charitas adresu</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for Neutron</source>
-        <translation>Upraviť možnosti konfigurácie pre Neutron</translation>
+        <source>Modify configuration options for Charitas</source>
+        <translation>Upraviť možnosti konfigurácie pre Charitas</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-200"/>
-        <source>Neutron</source>
-        <translation>Neutron</translation>
+        <source>Charitas</source>
+        <translation>Charitas</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About Neutron</source>
-        <translation>&amp;O Neutron</translation>
+        <source>&amp;About Charitas</source>
+        <translation>&amp;O Charitas</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>Neutron client</source>
-        <translation>Neutron klient</translation>
+        <source>Charitas client</source>
+        <translation>Charitas klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to Neutron network</source>
-        <translation><numerusform>%n aktívne spojenie s Neutron sieťov</numerusform><numerusform>%n aktívnych spojení s Neutron sieťov</numerusform><numerusform>%n aktívnych spojení s Neutron sieťou</numerusform></translation>
+        <source>%n active connection(s) to Charitas network</source>
+        <translation><numerusform>%n aktívne spojenie s Charitas sieťov</numerusform><numerusform>%n aktívnych spojení s Charitas sieťov</numerusform><numerusform>%n aktívnych spojení s Charitas sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -658,8 +658,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Neutron address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Neutron adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Charitas address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Charitas adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -718,8 +718,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. Neutron can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. Neutron už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. Charitas can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. Charitas už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1052,8 +1052,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Neutron address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou Neutron adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Charitas address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou Charitas adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1071,8 +1071,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>Neutron-Qt</source>
-        <translation>Neutron-Qt</translation>
+        <source>Charitas-Qt</source>
+        <translation>Charitas-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1144,13 +1144,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Neutron after logging in to the system.</source>
-        <translation>Automaticky spustiť Neutron po prihlásení sa do systému.</translation>
+        <source>Automatically start Charitas after logging in to the system.</source>
+        <translation>Automaticky spustiť Charitas po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Neutron on system login</source>
-        <translation>&amp;Spustiť Neutron pri prihlásení do systému</translation>
+        <source>&amp;Start Charitas on system login</source>
+        <translation>&amp;Spustiť Charitas pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1169,8 +1169,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Neutron client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta Neutron na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the Charitas client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta Charitas na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1179,8 +1179,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Neutron network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti Neutron cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the Charitas network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti Charitas cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1254,8 +1254,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Neutron.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Neutron.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Charitas.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Charitas.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1269,8 +1269,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Neutron addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť Neutron adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show Charitas addresses in the transaction list or not.</source>
+        <translation>Či chcete zobraziť Charitas adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1316,8 +1316,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Neutron.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní Neutron.</translation>
+        <source>This setting will take effect after restarting Charitas.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní Charitas.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1335,8 +1335,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Neutron network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Neutron po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Charitas network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Charitas po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1551,8 +1551,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Neutron-Qt help message to get a list with possible Neutron command-line options.</source>
-        <translation>Zobraziť Neutron-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku Neutron.</translation>
+        <source>Show the Charitas-Qt help message to get a list with possible Charitas command-line options.</source>
+        <translation>Zobraziť Charitas-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku Charitas.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1571,13 +1571,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Neutron - Debug window</source>
-        <translation>Neutron - Ladiace okno</translation>
+        <source>Charitas - Debug window</source>
+        <translation>Charitas - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Neutron Core</source>
-        <translation>Jadro Neutron</translation>
+        <source>Charitas Core</source>
+        <translation>Jadro Charitas</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1586,7 +1586,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Neutron debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Charitas debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Otvorte BTestcoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
@@ -1596,7 +1596,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the Neutron RPC console.</source>
+        <source>Welcome to the Charitas RPC console.</source>
         <translation>Vitajte v konzole BTestcoin RPC.</translation>
     </message>
     <message>
@@ -1755,8 +1755,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a Neutron address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
-        <translation>Zadajte Neutron adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
+        <source>Enter a Charitas address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
+        <translation>Zadajte Charitas adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1855,8 +1855,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid Neutron address</source>
-        <translation>UPOZORNENIE: Neplatná Neutron adresa</translation>
+        <source>WARNING: Invalid Charitas address</source>
+        <translation>UPOZORNENIE: Neplatná Charitas adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1929,8 +1929,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Neutron address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
-        <translation>Zadajte Neutron adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
+        <source>Enter a Charitas address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
+        <translation>Zadajte Charitas adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
     </message>
 </context>
 <context>
@@ -1990,8 +1990,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Neutron address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto Neutron adresu</translation>
+        <source>Sign the message to prove you own this Charitas address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Charitas adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2022,8 +2022,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Neutron address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Neutron adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Charitas address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Charitas adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2033,8 +2033,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Neutron address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
-        <translation>Zadajte Neutron adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
+        <source>Enter a Charitas address (e.g. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</source>
+        <translation>Zadajte Charitas adresu (napr. 2JhbfkAFvXqYkreSgJfrRLS9DepUcxbQci)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2043,8 +2043,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Neutron signature</source>
-        <translation>Zadajte Neutron podpis</translation>
+        <source>Enter Charitas signature</source>
+        <translation>Zadajte Charitas podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2614,8 +2614,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>Neutron version</source>
-        <translation>Neutron verzia</translation>
+        <source>Charitas version</source>
+        <translation>Charitas verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2624,8 +2624,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or neutrond</source>
-        <translation>Pošli príkaz na -server alebo neutrond</translation>
+        <source>Send command to -server or charitasd</source>
+        <translation>Pošli príkaz na -server alebo charitasd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2644,13 +2644,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: neutron.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: neutron.conf)</translation>
+        <source>Specify configuration file (default: charitas.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: charitas.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: neutrond.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: neutrond.pid)</translation>
+        <source>Specify pid file (default: charitasd.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: charitasd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2799,8 +2799,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Neutron will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny Neutron nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Charitas will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny Charitas nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2989,24 +2989,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=Neutronrpc
+rpcuser=Charitasrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Neutron Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Charitas Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
  %s
 Je odporúčané použiť nasledujúce náhodné heslo:
-rpcuser=Neutronrpc
+rpcuser=Charitasrpc
 rpcpassword=%s
 (Nemusíte si pamätať toto heslo)
 Užívateľské meno a heslo nesmú byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s oprávneniami súborov vlastníkov iba na čítatanie.
 Odporúča sa tiež nastaviť alertnotify, takže budete upozornení na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;Neutron Alert&quot; admin@foo.com</translation>
+napríklad: alertnotify=echo %%s | mail -s &quot;Charitas Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3130,13 +3130,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Neutron Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  Neutron is probably already running.</source>
-        <translation>Nemožno získať zámok na dátový adresár %s. Neutron už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Charitas is probably already running.</source>
+        <translation>Nemožno získať zámok na dátový adresár %s. Charitas už pravdepodobne beží.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>Neutron</source>
-        <translation>Neutron</translation>
+        <source>Charitas</source>
+        <translation>Charitas</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3170,13 +3170,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Neutron Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Neutron</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Neutron</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Charitas</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Charitas</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart Neutron to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Neutron k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart Charitas to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Charitas k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3245,8 +3245,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;Neutron Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. Neutron is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Neutron je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. Charitas is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Charitas je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-97"/>

@@ -1,4 +1,4 @@
-neutron               ICON    "pixmaps/neutron.ico"
+charitas               ICON    "pixmaps/charitas.ico"
 
 #include "wx/msw/wx.rc"
 

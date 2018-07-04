@@ -1408,7 +1408,7 @@ bool CDarkSendPool::DoAutomaticDenominating(bool fDryRun, bool ready)
         // should have some additional amount for them
         nLowestDenom += (DARKSEND_COLLATERAL*4)+DARKSEND_FEE*2;
 
-    int64_t nBalanceNeedsAnonymized = nAnonymizeNeutronAmount*COIN - pwalletMain->GetAnonymizedBalance();
+    int64_t nBalanceNeedsAnonymized = nAnonymizeCharitasAmount*COIN - pwalletMain->GetAnonymizedBalance();
 
     // if balanceNeedsAnonymized is more than pool max, take the pool max
     if(nBalanceNeedsAnonymized > DARKSEND_POOL_MAX) nBalanceNeedsAnonymized = DARKSEND_POOL_MAX;
@@ -2127,7 +2127,7 @@ void ThreadCheckDarkSendPool(void* parg)
     fOneThread = true;
 
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("neutron-darksend");
+    RenameThread("charitas-darksend");
 
     unsigned int nTick = 0;
 

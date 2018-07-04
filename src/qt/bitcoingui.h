@@ -206,7 +206,7 @@ private Q_SLOTS:
     void showInfo();
     void showConsole();
 
-    /** Open external (default) editor with neutron.conf */
+    /** Open external (default) editor with charitas.conf */
     void showConfEditor();
     /** Open external (default) editor with masternode.conf */
     void showMNConfEditor();

@@ -691,7 +691,7 @@ void SocketSendData(CNode *pnode)
 void ThreadSocketHandler(void* parg)
 {
     // Make this thread recognisable as the networking thread
-    RenameThread("Neutron-net");
+    RenameThread("Charitas-net");
 
     try
     {
@@ -1021,7 +1021,7 @@ void ThreadSocketHandler2(void* parg)
 void ThreadMapPort(void* parg)
 {
     // Make this thread recognisable as the UPnP thread
-    RenameThread("Neutron-UPnP");
+    RenameThread("Charitas-UPnP");
 
     try
     {
@@ -1086,7 +1086,7 @@ void ThreadMapPort2(void* parg)
             }
         }
 
-        string strDesc = "Neutron " + FormatFullVersion();
+        string strDesc = "Charitas " + FormatFullVersion();
 #ifndef UPNPDISCOVER_SUCCESS
         /* miniupnpc 1.5 */
         r = UPNP_AddPortMapping(urls.controlURL, data.first.servicetype,
@@ -1186,7 +1186,7 @@ void ThreadDNSAddressSeed(void* parg)
     LogPrintf("ThreadDNSAddressSeed - started\n");
 
     // Make this thread recognisable as the DNS seeding thread
-    RenameThread("Neutron-dnsseed");
+    RenameThread("Charitas-dnsseed");
 
     try
     {
@@ -1268,7 +1268,7 @@ void ThreadDumpAddress2(void* parg)
 void ThreadDumpAddress(void* parg)
 {
     // Make this thread recognisable as the address dumping thread
-    RenameThread("Neutron-adrdump");
+    RenameThread("Charitas-adrdump");
 
     try
     {
@@ -1283,7 +1283,7 @@ void ThreadDumpAddress(void* parg)
 void ThreadOpenConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("Neutron-opencon");
+    RenameThread("Charitas-opencon");
 
     try
     {
@@ -1464,7 +1464,7 @@ void ThreadOpenConnections2(void* parg)
 void ThreadOpenAddedConnections(void* parg)
 {
     // Make this thread recognisable as the connection opening thread
-    RenameThread("Neutron-opencon");
+    RenameThread("Charitas-opencon");
 
     try
     {
@@ -1596,7 +1596,7 @@ bool OpenNetworkConnection(const CAddress& addrConnect, CSemaphoreGrant *grantOu
 void ThreadMessageHandler(void* parg)
 {
     // Make this thread recognisable as the message handling thread
-    RenameThread("Neutron-msghand");
+    RenameThread("Charitas-msghand");
 
     try
     {
@@ -1780,7 +1780,7 @@ bool BindListenPort(const CService &addrBind, string& strError)
     {
         int nErr = WSAGetLastError();
         if (nErr == WSAEADDRINUSE)
-            strError = strprintf(_("Unable to bind to %s on this computer. Neutron is probably already running."), addrBind.ToString().c_str());
+            strError = strprintf(_("Unable to bind to %s on this computer. Charitas is probably already running."), addrBind.ToString().c_str());
         else
             strError = strprintf(_("Unable to bind to %s on this computer (bind returned error %d, %s)"), addrBind.ToString().c_str(), nErr, strerror(nErr));
         LogPrintf("%s\n", strError.c_str());
@@ -1858,7 +1858,7 @@ void Discover()
 void StartNode(void* parg)
 {
     // Make this thread recognisable as the startup thread
-    RenameThread("Neutron-start");
+    RenameThread("Charitas-start");
 
     uiInterface.InitMessage(_("Loading addresses..."));
     // Load addresses for peers.dat

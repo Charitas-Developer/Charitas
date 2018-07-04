@@ -153,7 +153,7 @@ OBJS= \
     obj/wallet.o \
     obj/walletdb.o
 
-all: neutrond
+all: charitasd
 
 LIBS += $(CURDIR)/leveldb/libleveldb.a $(CURDIR)/leveldb/libmemenv.a
 DEFS += $(addprefix -I,$(CURDIR)/leveldb/include)
@@ -187,11 +187,11 @@ obj/%.o: %.cpp
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-neutrond: $(OBJS:obj/%=obj/%)
+charitasd: $(OBJS:obj/%=obj/%)
 	$(LINK) $(xCXXFLAGS) -o $@ $^ $(xLDFLAGS) $(LIBS)
 
 clean:
-	-rm -f neutrond
+	-rm -f charitasd
 	-rm -f obj/*.o
 	-rm -f obj/*.P
 	-rm -f obj/build.h

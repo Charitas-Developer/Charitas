@@ -43,15 +43,15 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Starting Difficulty: results w
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 2);
 
-static const int64_t nTargetTimespan = 20 * 60;  // Neutron - every 20mins
-unsigned int nTargetSpacing = 1 * 79; // Neutron - 79 secs
+static const int64_t nTargetTimespan = 20 * 60;  // Charitas - every 20mins
+unsigned int nTargetSpacing = 1 * 79; // Charitas - 79 secs
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 static const int64_t nDiffChangeTarget = 1;
 
-unsigned int nStakeMinAge = 5 * 60 * 60; // Neutron - 5 hours
-unsigned int nStakeMaxAge = 5 * 60 * 60; // Neutron - 5 hours
-unsigned int nModifierInterval = 10 * 60; // Neutron - time to elapse before new modifier is computed
+unsigned int nStakeMinAge = 5 * 60 * 60; // Charitas - 5 hours
+unsigned int nStakeMaxAge = 5 * 60 * 60; // Charitas - 5 hours
+unsigned int nModifierInterval = 10 * 60; // Charitas - time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 80;
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -76,7 +76,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Neutron Signed Message:\n";
+const string strMessageMagic = "Charitas Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
@@ -2477,7 +2477,7 @@ bool CheckDiskSpace(uint64_t nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         LogPrintf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "Neutron", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "Charitas", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }

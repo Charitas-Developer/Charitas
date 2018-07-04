@@ -16,7 +16,7 @@ To Build
 cd src/
 make -f makefile.unix            # Headless Testcoin
 
-See readme-qt.rst for instructions on building Neutron QT,
+See readme-qt.rst for instructions on building Charitas QT,
 the graphical Testcoin.
 
 Dependencies

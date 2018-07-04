@@ -89,7 +89,7 @@ void Shutdown(void* parg)
     static bool fTaken;
 
     // Make this thread recognisable as the shutdown thread
-    RenameThread("Neutron-shutoff");
+    RenameThread("Charitas-shutoff");
 
     bool fFirstThread = false;
     {
@@ -114,7 +114,7 @@ void Shutdown(void* parg)
         delete pwalletMain;
         NewThread(ExitTimeout, NULL);
         MilliSleep(50);
-        LogPrintf("Neutron exited\n\n");
+        LogPrintf("Charitas exited\n\n");
         fExit = true;
 #ifndef QT_GUI
         // ensure non-UI client gets exited here, but let Bitcoin-Qt reach 'return 0;' in bitcoin.cpp
@@ -171,12 +171,12 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to bitcoind / RPC client
-            std::string strUsage = _("Neutron version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("Charitas version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  neutrond [options]                     " + "\n" +
-                  "  neutrond [options] <command> [params]  " + _("Send command to -server or neutrond") + "\n" +
-                  "  neutrond [options] help                " + _("List commands") + "\n" +
-                  "  neutrond [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  charitasd [options]                     " + "\n" +
+                  "  charitasd [options] <command> [params]  " + _("Send command to -server or charitasd") + "\n" +
+                  "  charitasd [options] help                " + _("List commands") + "\n" +
+                  "  charitasd [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
 
@@ -186,7 +186,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Neutron:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "Charitas:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -227,13 +227,13 @@ bool static InitError(const std::string &str)
 {
     LogPrintf("%s\n", str.c_str());
     uiInterface.InitMessage(str);
-    uiInterface.ThreadSafeMessageBox(str, _("Neutron"), CClientUIInterface::OK | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("Charitas"), CClientUIInterface::OK | CClientUIInterface::MODAL);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("Neutron"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, _("Charitas"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
     return true;
 }
 
@@ -255,8 +255,8 @@ std::string HelpMessage()
 {
     string strUsage = _("Options:") + "\n" +
         "  -?                     " + _("This help message") + "\n" +
-        "  -conf=<file>           " + _("Specify configuration file (default: neutron.conf)") + "\n" +
-        "  -pid=<file>            " + _("Specify pid file (default: neutrond.pid)") + "\n" +
+        "  -conf=<file>           " + _("Specify configuration file (default: charitas.conf)") + "\n" +
+        "  -pid=<file>            " + _("Specify pid file (default: charitasd.pid)") + "\n" +
         "  -datadir=<dir>         " + _("Specify data directory") + "\n" +
         "  -wallet=<dir>          " + _("Specify wallet file (within data directory)") + "\n" +
         "  -dbcache=<n>           " + _("Set database cache size in megabytes (default: 25)") + "\n" +
@@ -348,7 +348,7 @@ std::string HelpMessage()
     strUsage += "\n" + _("Darksend options:") + "\n";
     strUsage += "  -enabledarksend=<n>          " + _("Enable use of automated darksend for funds stored in this wallet (0-1, default: 0)") + "\n";
     strUsage += "  -darksendrounds=<n>          " + _("Use N separate masternodes to anonymize funds  (2-8, default: 2)") + "\n";
-    strUsage += "  -anonymizeNeutronamount=<n> " + _("Keep N Neutron anonymized (default: 0)") + "\n";
+    strUsage += "  -anonymizeCharitasamount=<n> " + _("Keep N Charitas anonymized (default: 0)") + "\n";
     strUsage += "  -liquidityprovider=<n>       " + _("Provide liquidity to Darksend by infrequently mixing coins on a continual basis (0-100, default: 0, 1=very frequent, high fees, 100=very infrequent, low fees)") + "\n";
 
     return strUsage;
@@ -526,7 +526,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (file) fclose(file);
     static boost::interprocess::file_lock lock(pathLockFile.string().c_str());
     if (!lock.try_lock())
-        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.\nNeutron is probably already running."), strDataDir.c_str()));
+        return InitError(strprintf(_("Cannot obtain a lock on data directory %s.\nCharitas is probably already running."), strDataDir.c_str()));
 
 #if !defined(WIN32) && !defined(QT_GUI)
     if (fDaemon)
@@ -553,7 +553,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     if (GetBoolArg("-shrinkdebugfile", !fDebug))
         ShrinkDebugFile();
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Neutron version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
+    LogPrintf("Charitas version %s (%s)\n", FormatFullVersion().c_str(), CLIENT_DATE.c_str());
     LogPrintf("Using OpenSSL version %s\n", SSLeay_version(SSLEAY_VERSION));
     if (!fLogTimestamps)
         LogPrintf("Startup time: %s\n", DateTimeStrFormat("%x %H:%M:%S", GetTime()).c_str());
@@ -575,7 +575,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     }
 
     if (fDaemon)
-        fprintf(stdout, "Neutron server starting\n");
+        fprintf(stdout, "Charitas server starting\n");
 
     int64_t nStart;
 
@@ -607,7 +607,7 @@ bool AppInit2(boost::thread_group& threadGroup)
                                      " Original wallet.dat saved as wallet.{timestamp}.bak in %s; if"
                                      " your balance or transactions are incorrect you should"
                                      " restore from a backup."), strDataDir.c_str());
-            uiInterface.ThreadSafeMessageBox(msg, _("Neutron"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("Charitas"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         if (r == CDBEnv::RECOVER_FAIL)
             return InitError(_("wallet.dat corrupt, salvage failed"));
@@ -803,13 +803,13 @@ bool AppInit2(boost::thread_group& threadGroup)
         {
             string msg(_("Warning: error reading wallet.dat! All keys read correctly, but transaction data"
                          " or address book entries might be missing or incorrect."));
-            uiInterface.ThreadSafeMessageBox(msg, _("Neutron"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+            uiInterface.ThreadSafeMessageBox(msg, _("Charitas"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         }
         else if (nLoadWalletRet == DB_TOO_NEW)
-            strErrors << _("Error loading wallet.dat: Wallet requires newer version of Neutron") << "\n";
+            strErrors << _("Error loading wallet.dat: Wallet requires newer version of Charitas") << "\n";
         else if (nLoadWalletRet == DB_NEED_REWRITE)
         {
-            strErrors << _("Wallet needed to be rewritten: restart Neutron to complete") << "\n";
+            strErrors << _("Wallet needed to be rewritten: restart Charitas to complete") << "\n";
             LogPrintf("%s", strErrors.str().c_str());
             return InitError(strErrors.str());
         }
@@ -908,7 +908,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     fMasterNode = GetBoolArg("-masternode", false);
     if(fMasterNode) {
-        LogPrintf("IS NEUTRON MASTER NODE\n");
+        LogPrintf("IS CHARITAS MASTER NODE\n");
         strMasterNodeAddr = GetArg("-masternodeaddr", "");
 
         LogPrintf(" addr %s\n", strMasterNodeAddr.c_str());
@@ -920,7 +920,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             }
 
             if (addrTest.GetPort() != GetDefaultPort())  {
-                std::string errorMessage = strprintf("Invalid -masternodeaddr port %u detected in neutron.conf (only %d is supported for mainnet)", addrTest.GetPort(), GetDefaultPort());
+                std::string errorMessage = strprintf("Invalid -masternodeaddr port %u detected in charitas.conf (only %d is supported for mainnet)", addrTest.GetPort(), GetDefaultPort());
                 return InitError(errorMessage);
             }
         }
@@ -957,9 +957,9 @@ bool AppInit2(boost::thread_group& threadGroup)
         nDarksendRounds = 99999;
     }
 
-    nAnonymizeNeutronAmount = GetArg("-anonymizeNeutronamount", 0);
-    if(nAnonymizeNeutronAmount > 999999) nAnonymizeNeutronAmount = 999999;
-    if(nAnonymizeNeutronAmount < 2) nAnonymizeNeutronAmount = 2;
+    nAnonymizeCharitasAmount = GetArg("-anonymizeCharitasamount", 0);
+    if(nAnonymizeCharitasAmount > 999999) nAnonymizeCharitasAmount = 999999;
+    if(nAnonymizeCharitasAmount < 2) nAnonymizeCharitasAmount = 2;
 
     //lite mode disables all Masternode and Darksend related functionality
     fLiteMode = GetBoolArg("-litemode", false);
@@ -969,14 +969,14 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     LogPrintf("fLiteMode %d\n", fLiteMode);
     LogPrintf("Darksend rounds %d\n", nDarksendRounds);
-    LogPrintf("Anonymize Neutron Amount %d\n", nAnonymizeNeutronAmount);
+    LogPrintf("Anonymize Charitas Amount %d\n", nAnonymizeCharitasAmount);
 
     /* Denominations
        A note about convertability. Within Darksend pools, each denomination
        is convertable to another.
        For example:
-       1Neutron+1000 == (.1Neutron+100)*10
-       10Neutron+10000 == (1Neutron+1000)*10
+       1Charitas+1000 == (.1Charitas+100)*10
+       10Charitas+10000 == (1Charitas+1000)*10
     */
     darkSendDenominations.push_back( (100000      * COIN)+100000000 );
     darkSendDenominations.push_back( (10000       * COIN)+10000000 );

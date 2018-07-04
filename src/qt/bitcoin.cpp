@@ -187,7 +187,7 @@ private:
     void handleRunawayException(const std::exception *e);
 };
 
-/** Main Neutron application object */
+/** Main Charitas application object */
 class BitcoinApplication : public QApplication
 {
     Q_OBJECT
@@ -251,7 +251,7 @@ BitcoinCore::BitcoinCore():
 void handleRunawayException(const std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Neutron can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Charitas can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
     exit(1);
 }
 
@@ -483,7 +483,7 @@ void BitcoinApplication::initializeResult(int retval)
 
 void BitcoinApplication::handleRunawayException(const QString &message)
 {
-    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Neutron Core can no longer continue safely and will quit.") + QString("\n\n") + message);
+    QMessageBox::critical(0, "Runaway exception", BitcoinGUI::tr("A fatal error occurred. Charitas Core can no longer continue safely and will quit.") + QString("\n\n") + message);
     ::exit(EXIT_FAILURE);
 }
 
@@ -528,12 +528,12 @@ int main(int argc, char *argv[])
     /// 3. Application identification
     // must be set before OptionsModel is initialized or translations are loaded,
     // as it is used to locate QSettings
-    app.setOrganizationName("Neutron");
-    app.setOrganizationDomain("neutroncoin.com");
+    app.setOrganizationName("Charitas");
+    app.setOrganizationDomain("charitascoin.com");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        app.setApplicationName("Neutron-Qt-testnet");
+        app.setApplicationName("Charitas-Qt-testnet");
     else
-        app.setApplicationName("Neutron-Qt");
+        app.setApplicationName("Charitas-Qt");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
@@ -558,20 +558,20 @@ int main(int argc, char *argv[])
     // // User language is set up: pick a data directory
     // Intro::pickDataDirectory();
 
-    /// 6. Determine availability of data directory and parse neutron.conf
+    /// 6. Determine availability of data directory and parse charitas.conf
     /// - Do not call GetDataDir(true) before this step finishes
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         // This message can not be translated, as translation is not initialized yet
         // (which not yet possible because lang=XX can be overridden in bitcoin.conf in the data directory)
-        QMessageBox::critical(0, "Neutron",
+        QMessageBox::critical(0, "Charitas",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
     try {
         ReadConfigFile(mapArgs, mapMultiArgs);
     } catch (std::exception& e) {
-        QMessageBox::critical(0, "Neutron",
+        QMessageBox::critical(0, "Charitas",
             QObject::tr("Error: Cannot parse configuration file: %1. Only use key=value syntax.").arg(e.what()));
         return 0;
     }

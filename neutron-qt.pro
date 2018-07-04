@@ -1,5 +1,5 @@
 TEMPLATE = app
-TARGET = Neutron-qt
+TARGET = Charitas-qt
 VERSION = 2.0.3
 INCLUDEPATH += src src/json src/qt
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE BOOST_NO_CXX11_SCOPED_ENUMS
@@ -498,8 +498,8 @@ macx:HEADERS += src/qt/macdockiconhandler.h src/qt/macnotificationhandler.h
 macx:OBJECTIVE_SOURCES += src/qt/macdockiconhandler.mm src/qt/macnotificationhandler.mm
 macx:LIBS += -framework Foundation -framework ApplicationServices -framework AppKit
 macx:DEFINES += MAC_OSX MSG_NOSIGNAL=0
-macx:ICON = src/qt/res/icons/neutron.icns
-macx:QMAKE_TARGET_BUNDLE_PREFIX = "com.neutroncoin"
+macx:ICON = src/qt/res/icons/charitas.icns
+macx:QMAKE_TARGET_BUNDLE_PREFIX = "com.charitascoin"
 
 # Set libraries and includes at end, to use platform-defined defaults if not overridden
 INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH
