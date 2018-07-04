@@ -55,8 +55,6 @@ static const unsigned char REJECT_MALFORMED = 0x01;
 static const unsigned char REJECT_OBSOLETE = 0x11;
 static const unsigned char REJECT_DUPLICATE = 0x12;
 
-static const int LAST_POW_BLOCK = 4000;
-
 static const unsigned int MAX_BLOCK_SIZE = 20000000;
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 static const unsigned int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;
