@@ -19,9 +19,9 @@ Specs:
 
 	Algo: SHA256d
 
-	RPC Port: 32000
+	RPC Port: 52481
 
-	P2P Port: 32001
+	P2P Port: 52480
 
 
 Block Rewards:
