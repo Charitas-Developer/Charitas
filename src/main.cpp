@@ -53,7 +53,7 @@ unsigned int nStakeMinAge = 24 * 60 * 60; // Charitas - 24 hours
 unsigned int nStakeMaxAge = 24 * 60 * 60; // Charitas - 24 hours
 unsigned int nModifierInterval = 10 * 60; // Charitas - time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 80;
+int nCoinbaseMaturity = 100;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
