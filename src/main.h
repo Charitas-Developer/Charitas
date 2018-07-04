@@ -64,14 +64,10 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE =  1000000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64_t COIN_YEAR_REWARD = 5 * CENT; // 5% per year
 
 static const string DEVELOPER_ADDRESS_MAINNET_V2 = "9mHXFeih5PspSKxXBVSX6qCojsy5xXbJDW";
 static const string DEVELOPER_ADDRESS_TESTNET_V2 = "mrNsqXKuw9n52z9bijLDn6DkReqRKnZPVj";
-static const string DEVELOPER_ADDRESS_MAINNET_V1 = "9VioFQf1GaDubNiKYXCwND1Lr4sdZJbe6L";
-static const string DEVELOPER_ADDRESS_TESTNET_V1 = "mnZP88spijp7AxRvdr7hvJfK6HRCphcsXa";
 static const int64_t DEVELOPER_PAYMENT_V2 = 10 * CENT; // 10% of block reward
-static const int64_t DEVELOPER_PAYMENT_V1 = 3 * CENT; // 3% of block reward
 
 static const int64_t MAX_TIME_SINCE_BEST_BLOCK = 10; // how many seconds to wait before sending next PushGetBlocks()
 
